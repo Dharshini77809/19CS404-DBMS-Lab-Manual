@@ -35,6 +35,8 @@ END;
 - Display the greater number using `DBMS_OUTPUT.PUT_LINE`.
 
 **Expected Output:**  
+<img width="707" height="833" alt="Screenshot 2026-08-17 114252" src="https://github.com/user-attachments/assets/e58fa110-d994-4d89-8b4c-d726030792e8" />
+
 Greater number is: 80
 
 ---
@@ -87,7 +89,9 @@ Reversed number is 5351
 - Display the largest number.
 
 **Expected Output:**  
-a = 10, b = 9, c = 15  
+<img width="705" height="823" alt="Screenshot 2026-08-17 114839" src="https://github.com/user-attachments/assets/a32fe500-217b-45d3-9382-e03b83d9d71a" />
+
+a = 50, b = 80, c = 90  
 Largest of three number is 15
 
 ## RESULT
