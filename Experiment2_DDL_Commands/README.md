@@ -1,4 +1,3 @@
-# Experiment 2: DDL Commands
 
 ## AIM
 To study and implement DDL commands and different types of constraints.
@@ -105,123 +104,163 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="932" height="643" alt="image" src="https://github.com/user-attachments/assets/c1e73d4b-76c0-4544-9ac5-8a4aca24a784" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+DELETE FROM Surgeries
+WHERE surgery_id=3 or surgeon_id=4
 ```
 
 **Output:**
+<img width="1228" height="797" alt="image" src="https://github.com/user-attachments/assets/cbccf17e-5f1b-4d61-8998-f6313a00c11a" />
 
-![Output1](output.png)
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="1227" height="677" alt="image" src="https://github.com/user-attachments/assets/7da92e22-e1f6-45c1-b852-96e5efe139bb" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+DELETE FROM Customer
+WHERE GRADE!= 3
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="832" height="605" alt="image" src="https://github.com/user-attachments/assets/ccbcea96-80c8-43ae-aee0-71a396a93375" />
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="807" height="567" alt="image" src="https://github.com/user-attachments/assets/a389cb46-4b34-4118-bf78-d70cc58af16a" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+DELETE FROM Surgeries
+WHERE surgery_id=3
 ```
 
 **Output:**
+<img width="1232" height="468" alt="image" src="https://github.com/user-attachments/assets/cadb8614-120a-471b-81c0-40ad3e824f44" />
 
-![Output3](output.png)
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="1137" height="482" alt="image" src="https://github.com/user-attachments/assets/37dc8208-f5e8-475b-b4db-8e08c853c09f" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+SELECT *
+FROM EmployeeInfo
+WHERE EmpFname NOT IN ('Sanjay','Sonia');
 ```
 
 **Output:**
+<img width="1218" height="377" alt="image" src="https://github.com/user-attachments/assets/697091f5-c338-40d3-8ccf-6e9a8819ab57" />
 
-![Output4](output.png)
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="1135" height="677" alt="image" src="https://github.com/user-attachments/assets/177f90ce-2322-4bd3-806e-ee828ca29ca3" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+SELECT name,city
+FROM salesman
+WHERE city IN ('London','Rome');
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="757" height="446" alt="image" src="https://github.com/user-attachments/assets/58cf2a68-aa8c-44e0-85d8-d96370e99d4e" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="1112" height="617" alt="image" src="https://github.com/user-attachments/assets/6a8eb802-cb09-4748-b483-e90c107a6460" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+SELECT
+    product_id,
+    original_price,
+    discount_percentage,
+    (original_price*(1-discount_percentage)) AS discounted_price
+FROM Products
+WHERE original_price BETWEEN 50 AND 150;
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="1225" height="385" alt="image" src="https://github.com/user-attachments/assets/cd89f0b9-b199-403a-96f9-3aa8c75befa2" />
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1027" height="322" alt="image" src="https://github.com/user-attachments/assets/2c1e09c8-6500-4174-b893-f7b46897e362" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+UPDATE Products
+SET sell_price=sell_price*1.10
+WHERE category='Bakery';
 ```
 
 **Output:**
+<img width="1228" height="520" alt="image" src="https://github.com/user-attachments/assets/a26406dc-ffff-4295-9fdf-07386c54c41e" />
 
-![Output7](output.png)
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1212" height="375" alt="image" src="https://github.com/user-attachments/assets/806abd35-e840-436a-8a69-8cbe7932ec76" />
+
 
 ```sql
--- Paste your SQL code below for Question 8
+SELECT 
+    product_id,
+    original_price,
+    discount_percentage,
+    original_price*(1-discount_percentage) AS discounted_price
+FROM products
+WHERE (original_price * (1-discount_percentage)) BETWEEN 100 AND 250;
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="1243" height="385" alt="image" src="https://github.com/user-attachments/assets/3fc021ab-4399-4141-9367-9509016bc39d" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="1207" height="570" alt="image" src="https://github.com/user-attachments/assets/b9d58d58-21c7-473a-9d54-db96b111371d" />
 
 ```sql
--- Paste your SQL code below for Question 9
+UPDATE Products
+SET reorder_lvl = reorder_lvl*0.70
+WHERE cost_price > 50 AND quantity <100;
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="1230" height="532" alt="image" src="https://github.com/user-attachments/assets/8ee8b70a-5b97-494b-9e2d-03f046dd9951" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="930" height="676" alt="image" src="https://github.com/user-attachments/assets/32cc3a33-6198-44f5-85bc-43d1f8268e56" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT *
+FROM emp
+WHERE hiredate > '2020-01-01';
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="1237" height="456" alt="image" src="https://github.com/user-attachments/assets/c2c1f2b3-cb06-4f35-bce7-c06287627674" />
+
 
 
 ## RESULT
